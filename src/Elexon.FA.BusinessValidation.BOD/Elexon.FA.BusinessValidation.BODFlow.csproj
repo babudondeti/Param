@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Events\**" />
+    <EmbeddedResource Remove="Events\**" />
+    <None Remove="Events\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Elexon.FA.Core" Version="1.0.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.0.100" />
+    <PackageReference Include="MediatR" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Elexon.FA.BusinessValidation.BOALF\Elexon.FA.BusinessValidation.BOALFlow.csproj" />
+    <ProjectReference Include="..\Elexon.FA.BusinessValidation.Domain\Elexon.FA.BusinessValidation.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

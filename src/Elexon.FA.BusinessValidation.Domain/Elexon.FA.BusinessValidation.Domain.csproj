@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+ 
+  <ItemGroup>
+    <Compile Remove="CommandHandler\**" />
+    <Compile Remove="Event\**" />
+    <Compile Remove="Exception\**" />
+    <Compile Remove="Integrated\**" />
+    <EmbeddedResource Remove="CommandHandler\**" />
+    <EmbeddedResource Remove="Event\**" />
+    <EmbeddedResource Remove="Exception\**" />
+    <EmbeddedResource Remove="Integrated\**" />
+    <None Remove="CommandHandler\**" />
+    <None Remove="Event\**" />
+    <None Remove="Exception\**" />
+    <None Remove="Integrated\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Elexon.FA.Core" Version="1.0.1" />
+    <PackageReference Include="FluentValidation" Version="8.0.100" />
+    <PackageReference Include="MediatR" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Command\" />
+  </ItemGroup>
+
+</Project>

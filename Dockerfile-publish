@@ -1,0 +1,10 @@
+FROM elxacrcrne01.azurecr.io/dotnet:2.1-aspnetcore-runtime
+WORKDIR /app
+
+COPY ./publish .
+
+ENV PORT 80
+EXPOSE 80
+
+
+ENTRYPOINT dotnet Elexon.FA.BusinessValidation.Api.dll

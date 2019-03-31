@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9C958571-5B5B-4DC7-B128-2B5DD3B62B18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8E4C078E-25B4-4238-8875-F10D5C03C23C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elexon.FA.BusinessValidation.Api", "src\Elexon.FA.BusinessValidation.Api\Elexon.FA.BusinessValidation.Api.csproj", "{452AD443-9CB5-4313-B4D9-E28ED68204EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elexon.FA.BusinessValidation.BOALFlow", "src\Elexon.FA.BusinessValidation.BOALF\Elexon.FA.BusinessValidation.BOALFlow.csproj", "{B8F50FF5-D6D0-4526-8987-C75722B63D3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elexon.FA.BusinessValidation.BODFlow", "src\Elexon.FA.BusinessValidation.BOD\Elexon.FA.BusinessValidation.BODFlow.csproj", "{3A12BEEE-172B-49B5-89CD-04C3EB98E37D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elexon.FA.BusinessValidation.Domain", "src\Elexon.FA.BusinessValidation.Domain\Elexon.FA.BusinessValidation.Domain.csproj", "{62E15E97-F704-4195-8AA8-7BC4481AD1A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elexon.FA.BusinessValidation.Test", "tests\Elexon.FA.BusinessValidation.Test\Elexon.FA.BusinessValidation.Test.csproj", "{5BC1F0BE-3846-4BF0-8B80-C575B76F0921}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elexon.FA.BusinessValidation.DISBSADFlow", "src\Elexon.FA.BusinessValidation.DISBSADFlow\Elexon.FA.BusinessValidation.DISBSADFlow.csproj", "{089281E2-C2EA-43CC-8D0D-B8EB8835582C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elexon.FA.BusinessValidation.NETBSADFlow", "src\Elexon.FA.BusinessValidation.NETBSADFlow\Elexon.FA.BusinessValidation.NETBSADFlow.csproj", "{AF99E2A6-360D-4A5F-8BF2-A521B2CC1CB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elexon.FA.BusinessValidation.FPNFlow", "src\Elexon.FA.BusinessValidation.FPNFlow\Elexon.FA.BusinessValidation.FPNFlow.csproj", "{5C982D2C-FCBF-4232-A498-05EC911FA68C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{452AD443-9CB5-4313-B4D9-E28ED68204EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452AD443-9CB5-4313-B4D9-E28ED68204EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452AD443-9CB5-4313-B4D9-E28ED68204EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452AD443-9CB5-4313-B4D9-E28ED68204EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F50FF5-D6D0-4526-8987-C75722B63D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F50FF5-D6D0-4526-8987-C75722B63D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F50FF5-D6D0-4526-8987-C75722B63D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F50FF5-D6D0-4526-8987-C75722B63D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A12BEEE-172B-49B5-89CD-04C3EB98E37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A12BEEE-172B-49B5-89CD-04C3EB98E37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A12BEEE-172B-49B5-89CD-04C3EB98E37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A12BEEE-172B-49B5-89CD-04C3EB98E37D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E15E97-F704-4195-8AA8-7BC4481AD1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E15E97-F704-4195-8AA8-7BC4481AD1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E15E97-F704-4195-8AA8-7BC4481AD1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E15E97-F704-4195-8AA8-7BC4481AD1A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC1F0BE-3846-4BF0-8B80-C575B76F0921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC1F0BE-3846-4BF0-8B80-C575B76F0921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC1F0BE-3846-4BF0-8B80-C575B76F0921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC1F0BE-3846-4BF0-8B80-C575B76F0921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089281E2-C2EA-43CC-8D0D-B8EB8835582C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089281E2-C2EA-43CC-8D0D-B8EB8835582C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089281E2-C2EA-43CC-8D0D-B8EB8835582C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089281E2-C2EA-43CC-8D0D-B8EB8835582C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF99E2A6-360D-4A5F-8BF2-A521B2CC1CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF99E2A6-360D-4A5F-8BF2-A521B2CC1CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF99E2A6-360D-4A5F-8BF2-A521B2CC1CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF99E2A6-360D-4A5F-8BF2-A521B2CC1CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C982D2C-FCBF-4232-A498-05EC911FA68C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C982D2C-FCBF-4232-A498-05EC911FA68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C982D2C-FCBF-4232-A498-05EC911FA68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C982D2C-FCBF-4232-A498-05EC911FA68C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{452AD443-9CB5-4313-B4D9-E28ED68204EF} = {9C958571-5B5B-4DC7-B128-2B5DD3B62B18}
+		{B8F50FF5-D6D0-4526-8987-C75722B63D3A} = {9C958571-5B5B-4DC7-B128-2B5DD3B62B18}
+		{3A12BEEE-172B-49B5-89CD-04C3EB98E37D} = {9C958571-5B5B-4DC7-B128-2B5DD3B62B18}
+		{62E15E97-F704-4195-8AA8-7BC4481AD1A3} = {9C958571-5B5B-4DC7-B128-2B5DD3B62B18}
+		{5BC1F0BE-3846-4BF0-8B80-C575B76F0921} = {8E4C078E-25B4-4238-8875-F10D5C03C23C}
+		{089281E2-C2EA-43CC-8D0D-B8EB8835582C} = {9C958571-5B5B-4DC7-B128-2B5DD3B62B18}
+		{AF99E2A6-360D-4A5F-8BF2-A521B2CC1CB5} = {9C958571-5B5B-4DC7-B128-2B5DD3B62B18}
+		{5C982D2C-FCBF-4232-A498-05EC911FA68C} = {9C958571-5B5B-4DC7-B128-2B5DD3B62B18}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FD6401D-2156-4FBF-9528-2FB7F497054C}
+	EndGlobalSection
+EndGlobal

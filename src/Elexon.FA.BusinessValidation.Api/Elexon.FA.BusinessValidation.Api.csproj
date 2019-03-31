@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <LangVersion>7.1</LangVersion>
+    </PropertyGroup>
+
+   <ItemGroup>
+    <Compile Remove="ServiceBusMicroservice\**" />
+    <Content Remove="ServiceBusMicroservice\**" />
+    <EmbeddedResource Remove="ServiceBusMicroservice\**" />
+    <None Remove="ServiceBusMicroservice\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.0" />
+    <PackageReference Include="Elexon.FA.Core" Version="1.0.1" />
+    <PackageReference Include="MediatR" Version="5.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="5.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Elexon.FA.BusinessValidation.BOALF\Elexon.FA.BusinessValidation.BOALFlow.csproj" />
+    <ProjectReference Include="..\Elexon.FA.BusinessValidation.BOD\Elexon.FA.BusinessValidation.BODFlow.csproj" />
+    <ProjectReference Include="..\Elexon.FA.BusinessValidation.DISBSADFlow\Elexon.FA.BusinessValidation.DISBSADFlow.csproj" />
+    <ProjectReference Include="..\Elexon.FA.BusinessValidation.Domain\Elexon.FA.BusinessValidation.Domain.csproj" />
+    <ProjectReference Include="..\Elexon.FA.BusinessValidation.FPNFlow\Elexon.FA.BusinessValidation.FPNFlow.csproj" />
+    <ProjectReference Include="..\Elexon.FA.BusinessValidation.NETBSADFlow\Elexon.FA.BusinessValidation.NETBSADFlow.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>

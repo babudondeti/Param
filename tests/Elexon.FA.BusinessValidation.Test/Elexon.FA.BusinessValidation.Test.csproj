@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.5.1" />
+    <PackageReference Include="AutoFixture.AutoMoq" Version="4.5.1" />
+    <PackageReference Include="Elexon.FA.Core" Version="1.0.1" />
+    <PackageReference Include="FluentAssertions" Version="5.4.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.0.100" />
+    <PackageReference Include="MediatR" Version="5.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="5.1.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="Moq" Version="4.10.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <PackageReference Include="XunitXml.TestLogger" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>System.Data</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>System.Drawing</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Elexon.FA.BusinessValidation.Api\Elexon.FA.BusinessValidation.Api.csproj" />
+    <ProjectReference Include="..\..\src\Elexon.FA.BusinessValidation.BOALF\Elexon.FA.BusinessValidation.BOALFlow.csproj" />
+    <ProjectReference Include="..\..\src\Elexon.FA.BusinessValidation.BOD\Elexon.FA.BusinessValidation.BODFlow.csproj" />
+    <ProjectReference Include="..\..\src\Elexon.FA.BusinessValidation.Domain\Elexon.FA.BusinessValidation.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Elexon.FA.BusinessValidation.FPNFlow\Elexon.FA.BusinessValidation.FPNFlow.csproj" />
+    <ProjectReference Include="..\..\src\Elexon.FA.BusinessValidation.NETBSADFlow\Elexon.FA.BusinessValidation.NETBSADFlow.csproj" />
+  </ItemGroup>
+
+</Project>

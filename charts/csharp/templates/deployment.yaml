@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "fullname" . }}
+  labels:
+    draft: {{ default "draft-app" .Values.draft }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+spec:
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      annotations:
+        buildID: {{ .Values.buildID }}
+      labels:
+        draft: {{ default "draft-app" .Values.draft }}
+        app: {{ template "fullname" . }}
+    spec:
+      containers:
+      - name: {{ .Chart.Name }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        env:
+        - name: KeyVaultUri
+          value: "https://elxkvldvnest01.vault.azure.net/"
+        - name: ClientId
+          value: "5946723b-d786-4adc-86f8-e421dc9d42e9"
+        - name: Secret
+          value: "%qUFnSo&e)($DL}3c{o_+%z-48FG3{6CVT7O7f|n$0+^g1:o$z!$RTI|_.c42"
+        ports:
+        - containerPort: {{ .Values.service.internalPort }}
+        resources:
+{{ toYaml .Values.resources | indent 12 }}
